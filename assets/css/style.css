@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	/* background-color: #18122b; */
+	background-image: url('../img/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-card {
+	width: 50%;
+	height: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.left-div {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	background-color: #443c68;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	padding: 10px;
+}
+.left-div h1 {
+	font-size: 25px;
+}
+.left-div img {
+	width: 200px;
+	border-radius: 8px;
+}
+.left-div p {
+	margin-top: 30px;
+	font-size: 15px;
+}
+.left-div p a {
+	text-decoration: none;
+	color: inherit;
+}
+.left-div p a:hover {
+	color: #999;
+}
+
+.right-div {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #635985;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.right-div h1 {
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+.right-div form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.right-div input {
+	width: 70%;
+	margin-bottom: 25px;
+	border: none;
+	background-color: #635985;
+	padding: 10px;
+	border-bottom: #443c68 2px solid;
+	color: #fff;
+}
+.right-div input::placeholder {
+	color: #bbb;
+}
+.right-div input:focus {
+	outline: none;
+}
+
+.error {
+	display: none;
+	color: crimson;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+.form-btn {
+	padding: 8px;
+	background-color: #443c68;
+	border: none;
+	color: #aaa;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.form-btn:hover {
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.form-card {
+		width: 70%;
+	}
+
+	.left-div {
+		display: none;
+	}
+
+	.right-div {
+		width: 100%;
+		border-radius: 8px;
+	}
+}
